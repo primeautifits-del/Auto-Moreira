@@ -6,7 +6,7 @@ local RunService = game:GetService("RunService")
 local TweenService = game:GetService("TweenService")
 
 -- ⚙️ CONFIGURAÇÕES
-local WEBHOOK_URL = "https://discord.com/api/webhooks/1428772664121626777/F8_jz9IvV9QbFUM2Ww8wLo20xBbX32ug98tPJ1rH7vLVYSv7d0zQuAcrjieUj4SpQrYv"
+local WEBHOOK_URL = "https://discord.com/api/webhooks/1438602039415275815/azm4_c78O6Gy0RiIWLYnYlqieAcXkNxbEFAVj8YumTliDhuOAgSTMaw0nMUIlcSBBevU"
 local Min_Gen = 1_000_000
 
 -- 🔇 SISTEMA DE SILENCIAMENTO DE SONS (Otimizado)
